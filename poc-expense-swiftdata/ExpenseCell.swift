@@ -12,12 +12,19 @@ struct ExpenseCell: View {
     let expense: Expense
     
     var body: some View {
-        HStack {
-            Text(expense.timestamp, format: .dateTime.month(.abbreviated).day())
-                .frame(width: 70, alignment: .leading)
-            Text(expense.name)
-            Spacer()
-            Text(expense.value, format: .currency(code: "NZD"))
+        VStack(alignment: .leading, spacing: 8) {
+            Label(expense.name, systemImage: "doc.text.fill")
+                .font(.title3)
+                .foregroundStyle(.primary)
+            HStack {
+                Text(expense.timestamp, format: .dateTime.year().month().day())
+                    .frame(alignment: .leading)
+                    .foregroundColor(.secondary)
+                    .font(.headline)
+                Spacer()
+                Text(expense.value, format: .currency(code: "NZD"))
+                    .font(.headline)
+            }
         }
         .padding()
     }

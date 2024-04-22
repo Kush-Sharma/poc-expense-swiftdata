@@ -19,7 +19,7 @@ struct AddExpenseSheet: View {
         NavigationStack {
             Form {
                 TextField("Expense Name", text: $name)
-                DatePicker("Date", selection: $timestamp)
+                DatePicker("Date", selection: $timestamp, displayedComponents: .date)
                 TextField("Value", value: $value, format: .currency(code: "NZD"))
                     .keyboardType(.decimalPad)
             }

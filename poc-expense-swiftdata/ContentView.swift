@@ -13,7 +13,7 @@ struct ContentView: View {
     @State private var isShowingExpenseSheet = false
     @State private var selectedExpense: Expense?
     
-    @Query(filter: #Predicate<Expense> {$0.value >= 100}, sort: \Expense.timestamp)
+    @Query(filter: #Predicate<Expense> {$0.value != 0}, sort: \Expense.timestamp)
     private var expenses: [Expense]
     
     var body: some View {
@@ -29,7 +29,7 @@ struct ContentView: View {
             }
             .navigationTitle("Expenses")
             .navigationBarTitleDisplayMode(.automatic)
-            .sheet(isPresented: $isShowingExpenseSheet) {AddExpenseSheet()}
+            .sheet(isPresented: $isShowingExpenseSheet) { AddExpenseSheet() }
             .sheet(item: $selectedExpense) { expense in
                 UpdateExpenseSheet(expense: expense)
             }
