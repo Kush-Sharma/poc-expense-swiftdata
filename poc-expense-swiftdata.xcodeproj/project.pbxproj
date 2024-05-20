@@ -18,6 +18,7 @@
 		E82B3C662BD5CAF400DF5DD9 /* AddExpenseSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82B3C652BD5CAF400DF5DD9 /* AddExpenseSheet.swift */; };
 		E82B3C682BD5CDBC00DF5DD9 /* ExpenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82B3C672BD5CDBC00DF5DD9 /* ExpenseCell.swift */; };
 		E82B3C6A2BD5F1A100DF5DD9 /* UpdateExpenseSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82B3C692BD5F1A100DF5DD9 /* UpdateExpenseSheet.swift */; };
+		E866E56B2BE747CD00EBB69A /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E866E56A2BE747CD00EBB69A /* ChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		E82B3C652BD5CAF400DF5DD9 /* AddExpenseSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseSheet.swift; sourceTree = "<group>"; };
 		E82B3C672BD5CDBC00DF5DD9 /* ExpenseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCell.swift; sourceTree = "<group>"; };
 		E82B3C692BD5F1A100DF5DD9 /* UpdateExpenseSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateExpenseSheet.swift; sourceTree = "<group>"; };
+		E866E56A2BE747CD00EBB69A /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				E82B3C652BD5CAF400DF5DD9 /* AddExpenseSheet.swift */,
 				E82B3C672BD5CDBC00DF5DD9 /* ExpenseCell.swift */,
 				E82B3C692BD5F1A100DF5DD9 /* UpdateExpenseSheet.swift */,
+				E866E56A2BE747CD00EBB69A /* ChartView.swift */,
 			);
 			path = "poc-expense-swiftdata";
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				E82B3C3C2BD5C41600DF5DD9 /* ContentView.swift in Sources */,
 				E82B3C3E2BD5C41600DF5DD9 /* Expense.swift in Sources */,
 				E82B3C682BD5CDBC00DF5DD9 /* ExpenseCell.swift in Sources */,
+				E866E56B2BE747CD00EBB69A /* ChartView.swift in Sources */,
 				E82B3C6A2BD5F1A100DF5DD9 /* UpdateExpenseSheet.swift in Sources */,
 				E82B3C662BD5CAF400DF5DD9 /* AddExpenseSheet.swift in Sources */,
 				E82B3C3A2BD5C41600DF5DD9 /* poc_expense_swiftdataApp.swift in Sources */,

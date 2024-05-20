@@ -9,7 +9,8 @@ import Foundation
 import SwiftData
 
 @Model
-final class Expense {
+final class Expense: Hashable, Identifiable {
+    let id = UUID()
     var name: String
     @Attribute(.unique) var timestamp: Date
     var value: Double

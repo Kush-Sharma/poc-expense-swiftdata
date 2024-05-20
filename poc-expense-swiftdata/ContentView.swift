@@ -18,41 +18,51 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
-            List {
-                ForEach(expenses) { expense in
-                    ExpenseCell(expense: expense)
-                        .onTapGesture {
-                            selectedExpense = expense
+            VStack {
+                List {
+                    ForEach(expenses) { expense in
+                        ExpenseCell(expense: expense)
+                            .onTapGesture {
+                                selectedExpense = expense
+                            }
+                    }
+                    .onDelete(perform: deleteItems)
+                }
+                .navigationTitle("Expenses")
+                .navigationBarTitleDisplayMode(.automatic)
+                .sheet(isPresented: $isShowingExpenseSheet) { AddExpenseSheet() }
+                .sheet(item: $selectedExpense) { expense in
+                    UpdateExpenseSheet(expense: expense)
+                }
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        EditButton()
+                    }
+                    ToolbarItem {
+                        Button("Add Item", systemImage: "plus") {
+                            isShowingExpenseSheet = true
                         }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .navigationTitle("Expenses")
-            .navigationBarTitleDisplayMode(.automatic)
-            .sheet(isPresented: $isShowingExpenseSheet) { AddExpenseSheet() }
-            .sheet(item: $selectedExpense) { expense in
-                UpdateExpenseSheet(expense: expense)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button("Add Item", systemImage: "plus") {
-                        isShowingExpenseSheet = true
+                    }
+                    ToolbarItem {
+                        NavigationLink(value: expenses) {
+                            Label("View Trends", systemImage: "chart.bar.xaxis")
+                        }
                     }
                 }
             }
-        }
-        .overlay {
-            if expenses.isEmpty {
-                ContentUnavailableView(label: {
-                    Label("No Expenses", systemImage: "note.text.badge.plus")
-                }, description:{
-                    Text("Start adding expenses to see your list.")
-                }, actions: {
-                    Button("Add Expense") { isShowingExpenseSheet = true }
-                })
+            .overlay {
+                if expenses.isEmpty {
+                    ContentUnavailableView(label: {
+                        Label("No Expenses", systemImage: "note.text.badge.plus")
+                    }, description:{
+                        Text("Start adding expenses to see your list.")
+                    }, actions: {
+                        Button("Add Expense") { isShowingExpenseSheet = true }
+                    })
+                }
+            }
+            .navigationDestination(for: [Expense].self) { expenses in
+                ChartView(expenses: expenses)
             }
         }
     }
