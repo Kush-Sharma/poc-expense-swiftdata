@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,9 +12,6 @@
 		E82B3C3E2BD5C41600DF5DD9 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82B3C3D2BD5C41600DF5DD9 /* Expense.swift */; };
 		E82B3C402BD5C41700DF5DD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E82B3C3F2BD5C41700DF5DD9 /* Assets.xcassets */; };
 		E82B3C432BD5C41700DF5DD9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E82B3C422BD5C41700DF5DD9 /* Preview Assets.xcassets */; };
-		E82B3C4D2BD5C41700DF5DD9 /* poc_expense_swiftdataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82B3C4C2BD5C41700DF5DD9 /* poc_expense_swiftdataTests.swift */; };
-		E82B3C572BD5C41700DF5DD9 /* poc_expense_swiftdataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82B3C562BD5C41700DF5DD9 /* poc_expense_swiftdataUITests.swift */; };
-		E82B3C592BD5C41700DF5DD9 /* poc_expense_swiftdataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82B3C582BD5C41700DF5DD9 /* poc_expense_swiftdataUITestsLaunchTests.swift */; };
 		E82B3C662BD5CAF400DF5DD9 /* AddExpenseSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82B3C652BD5CAF400DF5DD9 /* AddExpenseSheet.swift */; };
 		E82B3C682BD5CDBC00DF5DD9 /* ExpenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82B3C672BD5CDBC00DF5DD9 /* ExpenseCell.swift */; };
 		E82B3C6A2BD5F1A100DF5DD9 /* UpdateExpenseSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82B3C692BD5F1A100DF5DD9 /* UpdateExpenseSheet.swift */; };
@@ -22,14 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E82B3C492BD5C41700DF5DD9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E82B3C2E2BD5C41600DF5DD9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E82B3C352BD5C41600DF5DD9;
-			remoteInfo = "poc-expense-swiftdata";
-		};
-		E82B3C532BD5C41700DF5DD9 /* PBXContainerItemProxy */ = {
+		E80F495A2DF92EF200144F5A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E82B3C2E2BD5C41600DF5DD9 /* Project object */;
 			proxyType = 1;
@@ -39,39 +29,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E80F49562DF92EF200144F5A /* poc-expense-swiftdataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "poc-expense-swiftdataTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E82B3C362BD5C41600DF5DD9 /* poc-expense-swiftdata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "poc-expense-swiftdata.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E82B3C392BD5C41600DF5DD9 /* poc_expense_swiftdataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = poc_expense_swiftdataApp.swift; sourceTree = "<group>"; };
 		E82B3C3B2BD5C41600DF5DD9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E82B3C3D2BD5C41600DF5DD9 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		E82B3C3F2BD5C41700DF5DD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E82B3C422BD5C41700DF5DD9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E82B3C482BD5C41700DF5DD9 /* poc-expense-swiftdataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "poc-expense-swiftdataTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E82B3C4C2BD5C41700DF5DD9 /* poc_expense_swiftdataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = poc_expense_swiftdataTests.swift; sourceTree = "<group>"; };
-		E82B3C522BD5C41700DF5DD9 /* poc-expense-swiftdataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "poc-expense-swiftdataUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E82B3C562BD5C41700DF5DD9 /* poc_expense_swiftdataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = poc_expense_swiftdataUITests.swift; sourceTree = "<group>"; };
-		E82B3C582BD5C41700DF5DD9 /* poc_expense_swiftdataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = poc_expense_swiftdataUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E82B3C652BD5CAF400DF5DD9 /* AddExpenseSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseSheet.swift; sourceTree = "<group>"; };
 		E82B3C672BD5CDBC00DF5DD9 /* ExpenseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCell.swift; sourceTree = "<group>"; };
 		E82B3C692BD5F1A100DF5DD9 /* UpdateExpenseSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateExpenseSheet.swift; sourceTree = "<group>"; };
 		E866E56A2BE747CD00EBB69A /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E80F49572DF92EF200144F5A /* poc-expense-swiftdataTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "poc-expense-swiftdataTests"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		E80F49532DF92EF200144F5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E82B3C332BD5C41600DF5DD9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E82B3C452BD5C41700DF5DD9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E82B3C4F2BD5C41700DF5DD9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -85,8 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				E82B3C382BD5C41600DF5DD9 /* poc-expense-swiftdata */,
-				E82B3C4B2BD5C41700DF5DD9 /* poc-expense-swiftdataTests */,
-				E82B3C552BD5C41700DF5DD9 /* poc-expense-swiftdataUITests */,
+				E80F49572DF92EF200144F5A /* poc-expense-swiftdataTests */,
 				E82B3C372BD5C41600DF5DD9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,8 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				E82B3C362BD5C41600DF5DD9 /* poc-expense-swiftdata.app */,
-				E82B3C482BD5C41700DF5DD9 /* poc-expense-swiftdataTests.xctest */,
-				E82B3C522BD5C41700DF5DD9 /* poc-expense-swiftdataUITests.xctest */,
+				E80F49562DF92EF200144F5A /* poc-expense-swiftdataTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,26 +106,32 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		E82B3C4B2BD5C41700DF5DD9 /* poc-expense-swiftdataTests */ = {
-			isa = PBXGroup;
-			children = (
-				E82B3C4C2BD5C41700DF5DD9 /* poc_expense_swiftdataTests.swift */,
-			);
-			path = "poc-expense-swiftdataTests";
-			sourceTree = "<group>";
-		};
-		E82B3C552BD5C41700DF5DD9 /* poc-expense-swiftdataUITests */ = {
-			isa = PBXGroup;
-			children = (
-				E82B3C562BD5C41700DF5DD9 /* poc_expense_swiftdataUITests.swift */,
-				E82B3C582BD5C41700DF5DD9 /* poc_expense_swiftdataUITestsLaunchTests.swift */,
-			);
-			path = "poc-expense-swiftdataUITests";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E80F49552DF92EF200144F5A /* poc-expense-swiftdataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E80F495E2DF92EF200144F5A /* Build configuration list for PBXNativeTarget "poc-expense-swiftdataTests" */;
+			buildPhases = (
+				E80F49522DF92EF200144F5A /* Sources */,
+				E80F49532DF92EF200144F5A /* Frameworks */,
+				E80F49542DF92EF200144F5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E80F495B2DF92EF200144F5A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E80F49572DF92EF200144F5A /* poc-expense-swiftdataTests */,
+			);
+			name = "poc-expense-swiftdataTests";
+			packageProductDependencies = (
+			);
+			productName = "poc-expense-swiftdataTests";
+			productReference = E80F49562DF92EF200144F5A /* poc-expense-swiftdataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E82B3C352BD5C41600DF5DD9 /* poc-expense-swiftdata */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E82B3C5C2BD5C41700DF5DD9 /* Build configuration list for PBXNativeTarget "poc-expense-swiftdata" */;
@@ -162,42 +149,6 @@
 			productReference = E82B3C362BD5C41600DF5DD9 /* poc-expense-swiftdata.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E82B3C472BD5C41700DF5DD9 /* poc-expense-swiftdataTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E82B3C5F2BD5C41700DF5DD9 /* Build configuration list for PBXNativeTarget "poc-expense-swiftdataTests" */;
-			buildPhases = (
-				E82B3C442BD5C41700DF5DD9 /* Sources */,
-				E82B3C452BD5C41700DF5DD9 /* Frameworks */,
-				E82B3C462BD5C41700DF5DD9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E82B3C4A2BD5C41700DF5DD9 /* PBXTargetDependency */,
-			);
-			name = "poc-expense-swiftdataTests";
-			productName = "poc-expense-swiftdataTests";
-			productReference = E82B3C482BD5C41700DF5DD9 /* poc-expense-swiftdataTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		E82B3C512BD5C41700DF5DD9 /* poc-expense-swiftdataUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E82B3C622BD5C41700DF5DD9 /* Build configuration list for PBXNativeTarget "poc-expense-swiftdataUITests" */;
-			buildPhases = (
-				E82B3C4E2BD5C41700DF5DD9 /* Sources */,
-				E82B3C4F2BD5C41700DF5DD9 /* Frameworks */,
-				E82B3C502BD5C41700DF5DD9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E82B3C542BD5C41700DF5DD9 /* PBXTargetDependency */,
-			);
-			name = "poc-expense-swiftdataUITests";
-			productName = "poc-expense-swiftdataUITests";
-			productReference = E82B3C522BD5C41700DF5DD9 /* poc-expense-swiftdataUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,19 +156,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1530;
+				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
+					E80F49552DF92EF200144F5A = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = E82B3C352BD5C41600DF5DD9;
+					};
 					E82B3C352BD5C41600DF5DD9 = {
 						CreatedOnToolsVersion = 15.3;
-					};
-					E82B3C472BD5C41700DF5DD9 = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = E82B3C352BD5C41600DF5DD9;
-					};
-					E82B3C512BD5C41700DF5DD9 = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = E82B3C352BD5C41600DF5DD9;
 					};
 				};
 			};
@@ -235,13 +182,19 @@
 			projectRoot = "";
 			targets = (
 				E82B3C352BD5C41600DF5DD9 /* poc-expense-swiftdata */,
-				E82B3C472BD5C41700DF5DD9 /* poc-expense-swiftdataTests */,
-				E82B3C512BD5C41700DF5DD9 /* poc-expense-swiftdataUITests */,
+				E80F49552DF92EF200144F5A /* poc-expense-swiftdataTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E80F49542DF92EF200144F5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E82B3C342BD5C41600DF5DD9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,23 +204,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E82B3C462BD5C41700DF5DD9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E82B3C502BD5C41700DF5DD9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E80F49522DF92EF200144F5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E82B3C322BD5C41600DF5DD9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -282,39 +228,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E82B3C442BD5C41700DF5DD9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E82B3C4D2BD5C41700DF5DD9 /* poc_expense_swiftdataTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E82B3C4E2BD5C41700DF5DD9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E82B3C592BD5C41700DF5DD9 /* poc_expense_swiftdataUITestsLaunchTests.swift in Sources */,
-				E82B3C572BD5C41700DF5DD9 /* poc_expense_swiftdataUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E82B3C4A2BD5C41700DF5DD9 /* PBXTargetDependency */ = {
+		E80F495B2DF92EF200144F5A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E82B3C352BD5C41600DF5DD9 /* poc-expense-swiftdata */;
-			targetProxy = E82B3C492BD5C41700DF5DD9 /* PBXContainerItemProxy */;
-		};
-		E82B3C542BD5C41700DF5DD9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E82B3C352BD5C41600DF5DD9 /* poc-expense-swiftdata */;
-			targetProxy = E82B3C532BD5C41700DF5DD9 /* PBXContainerItemProxy */;
+			targetProxy = E80F495A2DF92EF200144F5A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		E80F495C2DF92EF200144F5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TY779B5T49;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.syncotia.poc-expense-swiftdataTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/poc-expense-swiftdata.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/poc-expense-swiftdata";
+			};
+			name = Debug;
+		};
+		E80F495D2DF92EF200144F5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TY779B5T49;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.syncotia.poc-expense-swiftdataTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/poc-expense-swiftdata.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/poc-expense-swiftdata";
+			};
+			name = Release;
+		};
 		E82B3C5A2BD5C41700DF5DD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -492,85 +454,18 @@
 			};
 			name = Release;
 		};
-		E82B3C602BD5C41700DF5DD9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = TY779B5T49;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.syncotia.poc-expense-swiftdataTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/poc-expense-swiftdata.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/poc-expense-swiftdata";
-			};
-			name = Debug;
-		};
-		E82B3C612BD5C41700DF5DD9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = TY779B5T49;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.syncotia.poc-expense-swiftdataTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/poc-expense-swiftdata.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/poc-expense-swiftdata";
-			};
-			name = Release;
-		};
-		E82B3C632BD5C41700DF5DD9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = TY779B5T49;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.syncotia.poc-expense-swiftdataUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "poc-expense-swiftdata";
-			};
-			name = Debug;
-		};
-		E82B3C642BD5C41700DF5DD9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = TY779B5T49;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.syncotia.poc-expense-swiftdataUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "poc-expense-swiftdata";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E80F495E2DF92EF200144F5A /* Build configuration list for PBXNativeTarget "poc-expense-swiftdataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E80F495C2DF92EF200144F5A /* Debug */,
+				E80F495D2DF92EF200144F5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E82B3C312BD5C41600DF5DD9 /* Build configuration list for PBXProject "poc-expense-swiftdata" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -585,24 +480,6 @@
 			buildConfigurations = (
 				E82B3C5D2BD5C41700DF5DD9 /* Debug */,
 				E82B3C5E2BD5C41700DF5DD9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E82B3C5F2BD5C41700DF5DD9 /* Build configuration list for PBXNativeTarget "poc-expense-swiftdataTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E82B3C602BD5C41700DF5DD9 /* Debug */,
-				E82B3C612BD5C41700DF5DD9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E82B3C622BD5C41700DF5DD9 /* Build configuration list for PBXNativeTarget "poc-expense-swiftdataUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E82B3C632BD5C41700DF5DD9 /* Debug */,
-				E82B3C642BD5C41700DF5DD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

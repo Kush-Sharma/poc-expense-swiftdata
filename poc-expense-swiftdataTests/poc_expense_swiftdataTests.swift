@@ -2,35 +2,68 @@
 //  poc_expense_swiftdataTests.swift
 //  poc-expense-swiftdataTests
 //
-//  Created by Kush Sharma on 22/04/2024.
+//  Created by Kush Sharma on 11/06/2025.
 //
 
-import XCTest
+import Testing
+import Foundation
 @testable import poc_expense_swiftdata
 
-final class poc_expense_swiftdataTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+@Suite()
+struct ExpenseTests {
+    let expenses = Expense.mockData()
+    
+    /// #require will fail - Can unwrap optional values, and stop the test when `nil`
+    // let expeses: [Expense] = []
+    
+    @Suite("Expense Data",
+           .tags(.critical))
+    struct ExpenseData {
+        let expenses = Expense.mockData()
+        
+        @Test("Check expense value")
+        @available(iOS 18, *)
+        func expenseValue() async throws {
+            let expectedValue = 2500.87
+            
+            let exppense = try #require(expenses.first)
+            #expect(exppense.value == expectedValue)
+        }
+        
+        @Test("Check expense name",
+              .timeLimit(.minutes(1)),
+              arguments: ["Test", "Test1", "Test2", "Test3", "Test4", "Test5"])
+        func expenseName(expanseName: String) async throws {
+            let expectedName = expanseName
+            
+            let expense = try #require(expenses.first(where: { $0.name == expectedName }))
+            #expect(expense.name == expectedName)
+        }
+        
+        @Test("Check expense timestamp",
+              .enabled(if: 1 > 0))
+        func expenseTimestamp() async throws {
+            let expectedValue = Date.from(year: 2024, month: 1, day: 1)
+            
+            let exppense = try #require(expenses.first)
+            #expect(exppense.timestamp == expectedValue)
         }
     }
+    
+    @Test("Check expense date",
+          .disabled("This test is disabled until the bug is fixed."),
+          .bug("https://bugTicketURL", "Date not being used correctly"),
+          .tags(.nonCritical))
+    func expenseDate() async throws {
+        let expectedValue = Date.from(year: 2024, month: 1, day: 1)
+        
+        let expense = try #require(expenses.first)
+        #expect(expense.timestamp == expectedValue)
+    }
+}
 
+
+extension Tag {
+    @Tag static var critical: Self
+    @Tag static var nonCritical: Self
 }
